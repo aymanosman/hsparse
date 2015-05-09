@@ -18,7 +18,7 @@ getTrade = do
     return $! Trade dataType infoType marketType issueCode
 
 main = do
-    input <- BL.readFile "market.pcap"
+    input <- BL.readFile "kopi.pcap"
     let trade = runGet getTrade input
     print trade
 
